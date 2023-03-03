@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+
+    /* create a flex container with items in a column */
+    /* center the content vertically and horizontally */
+
+}
+
+header {
+    /* styling for header - size, color*/
+}
+
+h1 {
+     /* styling for heading - size, color*/
+}
+
+#markers {
+    width: 75vmin;
+    margin: auto;
+    /* create a  grid container  */
+    /* create a 7 column grid template */
+    /* hint: look at the repeat() function */
+    
+    /* set a gap between the grid cells */
+    
+    /* set the margin-top between heading and markers */
+}
+
+#markers > div {
+    
+    /* set a height for the marker */
+    /* provide a wide border width and solid border style */ 
+    /* use the border-color to make the top border grey but the other sides should be transparent*/
+    /* https://www.w3schools.com/cssref/pr_border-color.php */
+    /* use the transform property to display it 75% of its original size */
+}
+#markers > div:hover {
+   
+    /* transform the scale to increase size */
+   /* add a transition to 'ease-in' the scaling animation */
+   /* change the border-top property to another color */
+}
+
+#board {
+    
+    /* create a grid container  */
+    /* create a 7 column grid template */
+    /* create a 6 row grid template */
+    /* provide a small gap between rows and columns */
+    
+}
+
+#board > div {
+    /* provide a border radius to round the corners of the div */
+}
+
+button {
+    /* set padding, font-size, and color for the button */
+    /* set a border and border radius for the button */
+}
+
+button:hover {
+    /* change the background color on hover*/
+    /* change the font color on hover */
+}
