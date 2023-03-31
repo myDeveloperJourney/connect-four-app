@@ -6,36 +6,44 @@ body {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     height: 100vh;
     margin: 0;
-
-    /* create a flex container with items in a column */
-    /* center the content vertically and horizontally */
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
-    /* styling for header - size, color*/
+    font-size: 4vmin;
+    color: darkgrey;
+    letter-spacing: 1vmin;
 }
 
 h1 {
-     /* styling for heading - size, color*/
+    color: grey;
+    font-size: 3vmin;
 }
 
 #markers {
-    width: 75vmin;
-    margin: auto;
+    /* width: 75vmin; */
+    /* margin: auto; */
     /* create a  grid container  */
+    display: grid;
     /* create a 7 column grid template */
-    /* hint: look at the repeat() function */
-    
+    grid-template-columns: repeat(7, 10vmin);
     /* set a gap between the grid cells */
-    
+    gap: 1vmin;
     /* set the margin-top between heading and markers */
+    margin-top: 4vmin;
 }
 
 #markers > div {
-    
     /* set a height for the marker */
+    height: 10vmin;
     /* provide a wide border width and solid border style */ 
+    border-width: 5vmin;
+    border-color: lightgrey transparent transparent;
+    border-style: solid;
+    transform: scale(.7);
     /* use the border-color to make the top border grey but the other sides should be transparent*/
     /* https://www.w3schools.com/cssref/pr_border-color.php */
     /* use the transform property to display it 75% of its original size */
@@ -43,29 +51,46 @@ h1 {
 #markers > div:hover {
    
     /* transform the scale to increase size */
+    transform: scale(.9);
    /* add a transition to 'ease-in' the scaling animation */
+    transition: transform 150ms ease-in;
    /* change the border-top property to another color */
+   border-top-color: darkgrey;
 }
 
 #board {
-    
     /* create a grid container  */
+    display: grid;
     /* create a 7 column grid template */
+    grid-template-columns: repeat(7, 10vmin);
     /* create a 6 row grid template */
+    grid-template-rows: repeat(6, 10vmin);
     /* provide a small gap between rows and columns */
-    
+    gap: 1vmin;
+
+    margin-top: -4vmin;
 }
 
 #board > div {
     /* provide a border radius to round the corners of the div */
+    border: .01vmin solid lightgrey;
+    border-radius: 50%;
 }
 
 button {
     /* set padding, font-size, and color for the button */
     /* set a border and border radius for the button */
+    margin-top: 4vmin;
+    padding: 2vmin;
+    font-size: 2vmin;
+    border: 0.01vmin solid lightgrey;
+    border-radius: 4vmin;
+    color: grey;
 }
 
 button:hover {
     /* change the background color on hover*/
+    background-color: darkgrey;
+    color: white;
     /* change the font color on hover */
 }
